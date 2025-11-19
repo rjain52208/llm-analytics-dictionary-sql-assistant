@@ -1,0 +1,5 @@
+This is a placeholder file representing the embedding model configuration.
+In a real system, this could refer to a model like:
+- all-MiniLM-L6-v2
+- text-embedding-3-large
+or another sentence embedding model.
