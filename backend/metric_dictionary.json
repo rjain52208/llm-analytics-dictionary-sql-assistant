@@ -1,0 +1,30 @@
+{
+  "metrics": [
+    {
+      "name": "total_revenue",
+      "label": "Total Revenue",
+      "description": "Sum of order_amount for all completed orders.",
+      "table": "analytics.orders",
+      "expression": "SUM(order_amount)"
+    },
+    {
+      "name": "total_orders",
+      "label": "Total Orders",
+      "description": "Count of all orders placed.",
+      "table": "analytics.orders",
+      "expression": "COUNT(*)"
+    }
+  ],
+  "dimensions": [
+    {
+      "name": "order_date",
+      "label": "Order Date",
+      "description": "Date when the order was created."
+    },
+    {
+      "name": "customer_id",
+      "label": "Customer ID",
+      "description": "Unique identifier for the customer."
+    }
+  ]
+}
